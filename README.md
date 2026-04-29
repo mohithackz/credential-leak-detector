@@ -11,8 +11,8 @@ This tool automates the entire credential leak detection process:
 
 ```
 Domain (e.g., example.com)
-    │
-    ▼
+               │
+               ▼
 ┌──────────────────────────────────┐
 │  Phase 1: Email Harvesting       │  ← theHarvester
 │  Passive OSINT to find emails    │
@@ -44,7 +44,7 @@ Domain (e.g., example.com)
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/credential-leak-detector.git
+git clone https://github.com/mohithackz/credential-leak-detector.git
 cd credential-leak-detector
 
 # 2. Run setup (creates venv, installs dependencies)
@@ -84,6 +84,7 @@ credential-leak-detector/
 ├── main.py                      # Entry point — run this
 ├── modules/
 │   ├── env_check.py             # Auto-detects installed tools
+│   ├── __init__.py              # Makes the folder a Python module
 │   ├── harvester.py             # theHarvester wrapper
 │   ├── spiderfoot_scan.py       # SpiderFoot breach scanner
 │   ├── darkdump_scan.py         # Dark web scanner via Tor
