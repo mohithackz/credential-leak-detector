@@ -1,0 +1,2 @@
+# Credential Leak Detector - Python Dependencies
+requests>=2.28.0

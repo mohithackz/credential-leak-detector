@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+
+# Scan output (generated at runtime)
+output/
+!output/.gitkeep
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Darkdump (cloned during setup)
+tools/darkdump/
+
+# API keys (sensitive)
+config/api_keys.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Backup files
+*_backup.py
